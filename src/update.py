@@ -28,10 +28,11 @@ def updatePlayer(data):
         else:
             if abs(plr.velocity[i[0]]) - plr.speedIncrement / 2 < plr.speedIncrement:
                 plr.velocity[i[0]] = 0
+            # Below is between Aristotelian physics and Newtonian
             if plr.velocity[i[0]] > 0:
-                plr.velocity[i[0]] -= plr.speedIncrement / 2
+                plr.velocity[i[0]] = 0 # -= plr.speedIncrement / 2
             elif plr.velocity[i[0]] < 0:
-                plr.velocity[i[0]] += plr.speedIncrement / 2
+                plr.velocity[i[0]] = 0 # += plr.speedIncrement / 2
 
     plr.physics()
     plr.changeModel()

@@ -8,6 +8,7 @@ version = 0.1
 
 # SDL2 objects
 size = (900, 900)
+sdl2.ext.init()
 window = sdl2.ext.Window(
     title = name + ' v' + str(version),
     position = (0, 0),
