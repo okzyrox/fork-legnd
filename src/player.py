@@ -15,7 +15,7 @@ class Player(Actor):
         self.dstrect.x += self.velocity['vx'] * self.speed
         self.dstrect.y += self.velocity['vy'] * self.speed
 
-    def changeModel(self) -> None:
+    def changeModel(self) -> None: # animation manager, i think??
         offSet = 0
         if self.velocity['vy'] > 0:
             offSet = 0
