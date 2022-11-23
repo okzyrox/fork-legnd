@@ -13,5 +13,6 @@ CMD
 ```bat
 
 python main.py
+*if python is under user-defined path variables
 ```
 Follow `INSTALL.md` for an installation guide/usage of py-sdl2.
